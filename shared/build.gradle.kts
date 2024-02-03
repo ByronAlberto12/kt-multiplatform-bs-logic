@@ -6,6 +6,9 @@ plugins {
     `maven-publish`
 }
 
+group = "com.mm.core"
+version = "2.0"
+
 kotlin {
     androidTarget {
         compilations.all {
@@ -55,21 +58,5 @@ android {
 apollo {
     service("service") {
         packageName.set("com.multimoney")
-    }
-}
-
-publishing {
-    publications {
-        create<MavenPublication>("mavenPublication") {
-            groupId = "com.github.ByronAlberto12"
-            artifactId = "kt-multiplatform-bs-logic"
-            version = "0.0.5"
-            from(components.findByName("common"))
-        }
-    }
-    repositories {
-        maven {
-            url = uri("https://jitpack.io")
-        }
     }
 }
