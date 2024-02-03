@@ -3,10 +3,8 @@ plugins {
     alias(libs.plugins.kotlinCocoapods)
     alias(libs.plugins.androidLibrary)
     alias(libs.plugins.apolloGraphQl)
+    `maven-publish`
 }
-
-group = "com.mm.core"
-version = "2.0"
 
 kotlin {
     androidTarget {
@@ -49,8 +47,8 @@ android {
         minSdk = 24
     }
     compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_1_8
-        targetCompatibility = JavaVersion.VERSION_1_8
+        sourceCompatibility = JavaVersion.VERSION_17
+        targetCompatibility = JavaVersion.VERSION_17
     }
 }
 
