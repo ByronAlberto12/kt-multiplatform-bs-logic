@@ -1,0 +1,16 @@
+[versions]
+agp = "8.2.2"
+kotlin = "1.9.20"
+graphql = "4.0.0-alpha.2"
+koin = "3.5.0"
+
+[libraries]
+kotlin-test = { module = "org.jetbrains.kotlin:kotlin-test", version.ref = "kotlin" }
+graphql = { module = "com.apollographql.apollo3:apollo-runtime", version.ref = "graphql" }
+koin-core = { module = "io.insert-koin:koin-core", version.ref = "koin" }
+
+[plugins]
+androidLibrary = { id = "com.android.library", version.ref = "agp" }
+apolloGraphQl = { id = "com.apollographql.apollo3", version.ref = "graphql" }
+kotlinMultiplatform = { id = "org.jetbrains.kotlin.multiplatform", version.ref = "kotlin" }
+kotlinCocoapods = { id = "org.jetbrains.kotlin.native.cocoapods", version.ref = "kotlin" }
