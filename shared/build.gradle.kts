@@ -3,11 +3,10 @@ plugins {
     alias(libs.plugins.kotlinCocoapods)
     alias(libs.plugins.androidLibrary)
     alias(libs.plugins.apolloGraphQl)
+    `maven-publish`
 }
 
-dependencies {
-    implementation(libs.gradle.simple)
-}
+group = "com.github.ByronAlberto12"
 
 kotlin {
     androidTarget {
