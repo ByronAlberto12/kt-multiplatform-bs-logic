@@ -22,6 +22,7 @@ kotlin {
         summary = "Some description for the Shared Module"
         homepage = "Link to the Shared Module homepage"
         version = "0.0.9"
+        license = "LICENSE"
         ios.deploymentTarget = "16.0"
         framework {
             baseName = "shared"
