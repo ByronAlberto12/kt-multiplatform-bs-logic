@@ -1,10 +1,12 @@
 [versions]
 agp = "8.2.2"
+gradle-simple = "1.0"
 kotlin = "1.9.20"
 graphql = "4.0.0-alpha.2"
 koin = "3.5.0"
 
 [libraries]
+gradle-simple = { module = "com.github.jitpack:gradle-simple", version.ref = "gradle-simple" }
 kotlin-test = { module = "org.jetbrains.kotlin:kotlin-test", version.ref = "kotlin" }
 graphql = { module = "com.apollographql.apollo3:apollo-runtime", version.ref = "graphql" }
 koin-core = { module = "io.insert-koin:koin-core", version.ref = "koin" }

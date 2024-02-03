@@ -5,6 +5,10 @@ plugins {
     alias(libs.plugins.apolloGraphQl)
 }
 
+dependencies {
+    implementation(libs.gradle.simple)
+}
+
 kotlin {
     androidTarget {
         compilations.all {
