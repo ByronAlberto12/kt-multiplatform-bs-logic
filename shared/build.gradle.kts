@@ -21,7 +21,7 @@ kotlin {
     cocoapods {
         summary = "Some description for the Shared Module"
         homepage = "Link to the Shared Module homepage"
-        version = "1.0"
+        version = "0.0.9"
         ios.deploymentTarget = "16.0"
         framework {
             baseName = "shared"
