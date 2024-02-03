@@ -2,7 +2,7 @@ Pod::Spec.new do |spec|
     spec.name                     = 'shared'
     spec.version                  = '0.0.9'
     spec.homepage                 = 'Link to the Shared Module homepage'
-    spec.source                   = { :http=> 'https://github.com/ByronAlberto12/kt-multiplatform-bs-logic.git', :tag => s.version.to_s }
+    spec.source                   = { :http=> 'https://github.com/ByronAlberto12/kt-multiplatform-bs-logic.git', :tag => spec.version.to_s }
     spec.authors                  = ''
     spec.license                  = { :type => 'MIT', :file => 'LICENSE' }
     spec.summary                  = 'Some description for the Shared Module'
