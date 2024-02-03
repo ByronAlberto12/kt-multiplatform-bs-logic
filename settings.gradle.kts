@@ -7,13 +7,6 @@ pluginManagement {
     }
 }
 
-buildscript {
-    repositories {
-        google()
-        mavenCentral()
-    }
-}
-
 dependencyResolutionManagement {
     repositories {
         google()
