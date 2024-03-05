@@ -2,9 +2,9 @@ Pod::Spec.new do |spec|
     spec.name                     = 'shared'
     spec.version                  = '0.0.9'
     spec.homepage                 = 'Link to the Shared Module homepage'
-    spec.source                   = { :git => 'https://github.com/ByronAlberto12/kt-multiplatform-bs-logic.git', :tag => spec.version.to_s }
+    spec.source                   = { :http=> ''}
     spec.authors                  = ''
-    spec.license                  = { :type => 'MIT', :file => 'LICENSE' }
+    spec.license                  = 'LICENSE'
     spec.summary                  = 'Some description for the Shared Module'
     spec.vendored_frameworks      = 'build/cocoapods/framework/shared.framework'
     spec.libraries                = 'c++'

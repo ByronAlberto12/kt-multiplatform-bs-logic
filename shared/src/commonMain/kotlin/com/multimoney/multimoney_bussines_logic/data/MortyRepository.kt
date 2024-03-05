@@ -1,5 +1,6 @@
 package com.multimoney.multimoney_bussines_logic.data
 
+import MultimoneyBusinessLogic
 import com.apollographql.apollo3.ApolloClient
 import com.apollographql.apollo3.api.Optional
 import com.multimoney.GetCharactersQuery
@@ -9,7 +10,7 @@ import kotlinx.coroutines.flow.flow
 class MortyRepository {
 
     private val apolloClient = ApolloClient.Builder()
-        .serverUrl("https://rickandmortyapi.com/graphql")
+        .serverUrl(MultimoneyBusinessLogic.SERVER_URL)
         .build()
 
     suspend fun getCharacters(page: Optional<Int>): Flow<GetCharactersQuery.Characters> {

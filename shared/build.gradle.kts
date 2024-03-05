@@ -5,6 +5,8 @@ plugins {
     alias(libs.plugins.apolloGraphQl)
     `maven-publish`
 }
+group = "io.github.byronalberto12"
+version = "1.0.0"
 
 kotlin {
     androidTarget {
@@ -56,5 +58,17 @@ android {
 apollo {
     service("service") {
         packageName.set("com.multimoney")
+    }
+}
+
+publishing {
+    publications {
+        create<MavenPublication>("maven") {
+            artifactId = "kt-multiplatform-bs-logic"
+            pom {
+                name.set("kt-multiplatform-bs-logic")
+                description.set("kt-multiplatform-bs-logic for Kotlin Multiplatform")
+            }
+        }
     }
 }
