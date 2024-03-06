@@ -4,3 +4,7 @@ plugins {
     alias(libs.plugins.kotlinMultiplatform).apply(false)
     alias(libs.plugins.kotlinCocoapods).apply(false)
 }
+
+repositories {
+    gradlePluginPortal() // To use 'maven-publish' and 'signing' plugins in our own plugin
+}
