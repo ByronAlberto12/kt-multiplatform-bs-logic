@@ -77,7 +77,7 @@ publishing {
             from(components["kotlin"])
             groupId = "io.github.byronalberto12"
             artifactId = "kt-multiplatform-bs-logic"
-            version = "1.0.1"
+            version = "1.0.2"
 
             pom {
                 name.set("kt-multiplatform-bs-logic")
